@@ -7,7 +7,6 @@
 
 .links {
     text-decoration: none;
-    color: black;
 }
 
 /*-----------------------------------------*/
@@ -41,25 +40,31 @@
 
 .innerNav {
     width: 100%;
+    margin: 0;
     list-style: none;
+}
+
+.innerNav--layout {
     display: flex;
     box-sizing: border-box;
 }
 
+.innerNav__item {
+    display: inline-block;
+}
+
 .innerNav--top {
-    margin: 0;
     justify-content: flex-end;
 }
 
 .innerNav--bottom {
-    margin: 0;
     justify-content: space-between;
-    border-top: solid 1px blue;
+    border-top: solid 0.0625rem blue;
 }
 
 .innerNav__item--top {
     display: block;
-    margin: 8px 10px;
+    margin: 0.5rem 0.625rem;
     font-size: 85%;
 }
 
@@ -71,26 +76,42 @@
 }
 
 .innerNav__inner--optioncon {
-    margin: 0 0 0 10px;
-    padding: 2px;
+    margin: 0 0 0 0.625rem;
+    padding: 0.125rem;
     font-weight: bold;
-    border: solid 1px blue;
+    border: solid 0.0625rem blue;
     color: yellow;
     background-color: black;
 }
 
 .innerNav__inner--optionA {
-    margin: 0 2px;
-    padding: 2px;
+    margin: 0 0.125rem;
+    padding: 0.125rem;
     font-weight: bold;
-    border: solid 1px blue;
+    border: solid 0.0625rem blue;
     color: blue;
 }
 
 .innerNav__item--green {
     margin: 0;
-    padding: 8px 8px;
+    padding: 0.5rem 0.5rem;
     text-align: center;
     color: white;
     background-color: forestgreen;
+}
+
+.links--black {
+    color: black;
+}
+
+/*-----------------------------------------*/
+/*Secondary nav*/
+
+.secondaryNav {
+    height: 4.375rem;
+    background-color: blue;
+}
+
+.links--white {
+    color: white;
 }
