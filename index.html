@@ -18,7 +18,7 @@
                 <li class="innerNav__item--top">Font Size <span class="innerNav__inner--optionA">A-</span><span class="innerNav__inner--optionA">A</span><span class="innerNav__inner--optionA">A+</span></li>
                 <li class="innerNav__item--top">Download a Brochure</li>
                 <li class="innerNav__item--top">Blog</li>
-                <li class="innerNav__item--top innerNav__item--green"><i class="fas fa-phone-alt"></i>Call us on 0330 042 5909</li>
+                <li class="innerNav__item--top innerNav__item--green"><i class="innerNav__item--icon fas fa-phone-alt"></i>Call us on 0330 042 5909</li>
             </ul>
             
             <ul class=" innerNav innerNav--layout innerNav--bottom">
@@ -33,7 +33,7 @@
     
     <section> <!--placeholder name-->
       <ul class="secondaryNav innerNav innerNav--layout innerNav--top">
-        <li class="innerNav__item--top"><a class="links links--white" href="#">Versa Connect<!--add image--></a></li>
+        <li class="innerNav__item--top secondadrNav--leftfloat"><a class="links links--white" href="#">Versa Connect<!--add image--></a></li>
         <li class="innerNav__item--top"><a class="links links--white" href="#">Overview</a></li>
         <li class="innerNav__item--top"><a class="links links--white" href="#">Offers</a></li>
         <li class="innerNav__item--top"><a class="links links--white" href="#">Modules</a></li>
@@ -42,75 +42,129 @@
     </section>
     
    <section> <!--Overview section-->
-     <header>
-       <div>
-         <h3>Versa Connect</h3>
-         <p><quote>The Ford Tourneo Conect is relaxing and confortable place to be. Great to drive, great to sit in, it boasts premium efficiency without compromising everyday practicallity.</quote></p>
-         <button>Make an Enquiry</button>
+     <header class="banner">
+       <div class="banBox">
+           <div class="banBox--cont">
+             <h1 class="banBox--title">Versa Connect</h1>
+             <p>"The Ford Tourneo Conect is relaxing and confortable place to be. Great to drive, great to sit in, it boasts premium efficiency without compromising everyday practicallity."</p>
+             <button class="btn-blue">Make an Enquiry</button>
+           </div>
        </div>
      </header>
      
      <section> <!--options turn this into a carosel-->
-       <div> <!--Dimensions-->
-         <!--table-->
-         <img> <!--blue print-->
-       </div>
-
-       <div><!--Vehicle Layout-->
-         <p>Short (based on Ford Tourneo Connect)</p>
-         <!--img 1-->
-         <p>Long (based on Ford Tourneo Connect)</p>
-         <!--img 2-->
-       </div>
-
-       <div><!--Color-->
-         <!--img of car-->
-         <div> <!--color list-->
-          <ul>
-            <li></li> <!--show a coloured circle-->
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-           <p>Non Metalic</p>
-           <p>Metalic</p>
-         </div>
-       </div>
-
-       <div><!--Interiour Trim-->
-         <!--banner img-->
-         <div>
-           <ul>
-             <li>
-               <!--img 1-->
-               Titanium
-               Insert: Chicane in Medium Stone
-               Bolster: Malt in Medium Stone
-               <input type="checkbox">
+         <ul class="innerNav innerNav--layout innerNav--bottom featureNav">
+             <li class="innerNav__item--bottom">
+                Dimensions
              </li>
-             <li>
-               <!--img 2-->
-               Zetec
-               Insert: Route in Charcoal Black
-               Bolster: Max in Charcoal Black
-               <input type="checkbox">
+             <li class="innerNav__item--bottom">
+             Vehicle Layouts
              </li>
-             <li>
-               <!--img 1-->
-               Titanium
-               Insert: Chicane in Charcoal Black
-               Bolster: Malt in Charcoal Black
-               <input type="checkbox">
+             <li class="innerNav__item--bottom">
+             Color
              </li>
-           </ul>
-         </div>
-       </div>
+             <li class="innerNav__item--bottom">
+             Interiour Trim
+             </li>
+         </ul>
+         <div class="featureCarousel">
+           <div> <!--Dimensions-->
+               <table>
+                   <tr>
+                       <th></th>
+                       <th>Short</th>
+                       <th>Long</th>
+                   </tr>
+                   <tr>
+                       <td>Entry height</td>
+                       <td>1,373mm</td>
+                       <td>1,373mm</td>
+                   </tr>
+                   <tr>
+                       <td>Ramp length</td>
+                       <td>1,010mm</td>
+                       <td>1,010mm</td>
+                   </tr>
+                   <tr>
+                       <td>Ramp width</td>
+                       <td>755mm</td>
+                       <td>755mm</td>
+                   </tr>
+                   <tr>
+                       <td>Channel length</td>
+                       <td>1,580mm</td>
+                       <td>1,580mm</td>
+                   </tr>
+                   <tr>
+                       <td>External height</td>
+                       <td>1,852mm</td>
+                       <td>1,845mm</td>
+                   </tr>
+                   <tr>
+                       <td>External length</td>
+                       <td>4,418mm</td>
+                       <td>4,818mm</td>
+                   </tr>
+               </table>
+             <img src="resources/media/dimensions.jpg" alt="Blue print of vehicle"> <!--blue print-->
+           </div>
+
+           <div><!--Vehicle Layout-->
+             <p>Short (based on Ford Tourneo Connect)</p>
+             <!--img 1-->
+             <p>Long (based on Ford Tourneo Connect)</p>
+             <!--img 2-->
+           </div>
+
+           <div><!--Color-->
+             <!--img of car-->
+             <div> <!--color list-->
+              <ul>
+                <li></li> <!--show a coloured circle-->
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+               <p>Non Metalic</p>
+               <p>Metalic</p>
+             </div>
+           </div>
+
+           <div><!--Interiour Trim-->
+             <!--banner img-->
+             <div>
+               <ul>
+                 <li>
+                   <!--img 1-->
+                   Titanium
+                   Insert: Chicane in Medium Stone
+                   Bolster: Malt in Medium Stone
+                   <input type="checkbox">
+                 </li>
+                 <li>
+                   <!--img 2-->
+                   Zetec
+                   Insert: Route in Charcoal Black
+                   Bolster: Max in Charcoal Black
+                   <input type="checkbox">
+                 </li>
+                 <li>
+                   <!--img 1-->
+                   Titanium
+                   Insert: Chicane in Charcoal Black
+                   Bolster: Malt in Charcoal Black
+                   <input type="checkbox">
+                 </li>
+               </ul>
+             </div>
+           </div>
+        </div>
      </section>
      
      <section><!--btn present beneath all of the above section-->

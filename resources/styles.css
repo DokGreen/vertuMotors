@@ -21,7 +21,7 @@
 }
 
 .mainNav--border {
-    border-right: solid 1px blue;
+    border-right: solid 1px #EFEFEF;
 }
 
 .mainNav--logo {
@@ -59,7 +59,7 @@
 
 .innerNav--bottom {
     justify-content: space-between;
-    border-top: solid 0.0625rem blue;
+    border-top: solid 0.0625rem #EFEFEF;
 }
 
 .innerNav__item--top {
@@ -97,7 +97,11 @@
     padding: 0.5rem 0.5rem;
     text-align: center;
     color: white;
-    background-color: forestgreen;
+    background-color: #14A65B;
+}
+
+.innerNav__item--icon{
+    margin-right: 10px;
 }
 
 .links--black {
@@ -109,9 +113,70 @@
 
 .secondaryNav {
     height: 4.375rem;
-    background-color: blue;
+    background-color: #003E78;
+    align-items: center;
 }
 
 .links--white {
     color: white;
+    font-size: 125%;
+    font-weight: 500;
+}
+
+
+.secondadrNav--leftfloat {
+    margin-left: auto;
+}
+
+/*-----------------------------------------*/
+/*Header Banner*/
+
+.banner {
+    height: 32.8125rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: url(media/mainBillboard.jpg), center, no-repeat;
+    background-size: cover;
+}
+
+.banBox {
+    height: 60%;
+    width: 25%;
+    margin: 0 5%;
+    padding-bottom: 2%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.banBox--cont {
+    margin: 0 5%;
+}
+
+.banBox--title {
+    font-size: 40px;
+}
+
+.btn-blue {
+    height: 17%;
+    width: 100%;
+    align-self: center;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #017EDB;
+}
+
+/*------------------------------------*/
+/*features section*/
+
+.featureNav {
+    width: 80%;
+    margin: 3% 10%;
 }
