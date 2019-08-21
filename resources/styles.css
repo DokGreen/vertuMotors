@@ -1,0 +1,96 @@
+.siteWrapper {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+/*-----------------------------------------*/
+
+.mainNav {
+    height: 5.7rem;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.mainNav--border {
+    border-right: solid 1px blue;
+}
+
+.mainNav--logo {
+    height: 70%;
+    width: 70%;
+    margin: 5% 10%;
+    
+}
+
+.mainNav__inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerNav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.innerNav--top {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.innerNav--bottom {
+    margin: 0;
+    justify-content: space-between;
+    border-top: solid 1px blue;
+}
+
+.innerNav__item--top {
+    display: block;
+    margin: 8px 10px;
+    font-size: 85%;
+}
+
+.innerNav__item--bottom {
+    display: block;
+    margin: 1rem auto;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.innerNav__inner--optioncon {
+    margin: 0 0 0 10px;
+    padding: 2px;
+    font-weight: bold;
+    border: solid 1px blue;
+    color: yellow;
+    background-color: black;
+}
+
+.innerNav__inner--optionA {
+    margin: 0 2px;
+    padding: 2px;
+    font-weight: bold;
+    border: solid 1px blue;
+    color: blue;
+}
+
+.innerNav__item--green {
+    margin: 0;
+    padding: 8px 8px;
+    text-align: center;
+    color: white;
+    background-color: forestgreen;
+}
