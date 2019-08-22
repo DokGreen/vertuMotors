@@ -52,7 +52,7 @@
        </div>
      </header>
      
-     <section> <!--options turn this into a carosel-->
+     <section class="carousle__container"> <!--options turn this into a carosel-->
          <ul class="innerNav innerNav--layout innerNav--bottom featureNav">
              <li class="innerNav__item--bottom">
                 Dimensions
@@ -67,108 +67,104 @@
              Interiour Trim
              </li>
          </ul>
-         <div class="featureCarousel">
-           <div> <!--Dimensions-->
-               <table>
+         <div class="carousel__slides">
+             <div class="slide--item">
+                 <table>
                    <tr>
                        <th></th>
                        <th>Short</th>
                        <th>Long</th>
                    </tr>
                    <tr>
-                       <td>Entry height</td>
+                       <td class="td--grey">Entry height</td>
                        <td>1,373mm</td>
                        <td>1,373mm</td>
                    </tr>
                    <tr>
-                       <td>Ramp length</td>
+                       <td class="td--grey">Ramp length</td>
                        <td>1,010mm</td>
                        <td>1,010mm</td>
                    </tr>
                    <tr>
-                       <td>Ramp width</td>
+                       <td class="td--grey">Ramp width</td>
                        <td>755mm</td>
                        <td>755mm</td>
                    </tr>
                    <tr>
-                       <td>Channel length</td>
-                       <td>1,580mm</td>
+                       <td class="td--grey">Channel length</td>
+                       <td >1,580mm</td>
                        <td>1,580mm</td>
                    </tr>
                    <tr>
-                       <td>External height</td>
+                       <td class="td--grey">External height</td>
                        <td>1,852mm</td>
                        <td>1,845mm</td>
                    </tr>
                    <tr>
-                       <td>External length</td>
+                       <td class="td--grey">External length</td>
                        <td>4,418mm</td>
                        <td>4,818mm</td>
                    </tr>
                </table>
-             <img src="resources/media/dimensions.jpg" alt="Blue print of vehicle"> <!--blue print-->
-           </div>
-
-           <div><!--Vehicle Layout-->
-             <p>Short (based on Ford Tourneo Connect)</p>
-             <!--img 1-->
-             <p>Long (based on Ford Tourneo Connect)</p>
-             <!--img 2-->
-           </div>
-
-           <div><!--Color-->
-             <!--img of car-->
-             <div> <!--color list-->
-              <ul>
-                <li></li> <!--show a coloured circle-->
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-               <p>Non Metalic</p>
-               <p>Metalic</p>
+                <img src="resources/media/dimensions.jpg">
              </div>
-           </div>
-
-           <div><!--Interiour Trim-->
-             <!--banner img-->
-             <div>
-               <ul>
-                 <li>
-                   <!--img 1-->
-                   Titanium
-                   Insert: Chicane in Medium Stone
-                   Bolster: Malt in Medium Stone
-                   <input type="checkbox">
-                 </li>
-                 <li>
-                   <!--img 2-->
-                   Zetec
-                   Insert: Route in Charcoal Black
-                   Bolster: Max in Charcoal Black
-                   <input type="checkbox">
-                 </li>
-                 <li>
-                   <!--img 1-->
-                   Titanium
-                   Insert: Chicane in Charcoal Black
-                   Bolster: Malt in Charcoal Black
-                   <input type="checkbox">
-                 </li>
-               </ul>
+             <div class="slide--item">
+                 <p>Short (based on Ford Tourneo Connect)</p>
+             <img src="resources/media/layout2.jpg">
+                 <p>Long (based on the Forn Tourneo Grand Connect)</p>
+                 <img src="resources/media/layout.jpg">
+                 <p>*Wheelchair user can sit a little further forward (not as forward as Row 2 seats)</p>
              </div>
-           </div>
+             <div class="slide--item"></div>
+             <div class="slide--item">
+                 <div class="trim__box1">
+                 </div>
+                 
+                 <div class="trim__box2--container">
+                 <div class="trim__box2">
+                     <div class="trim__box2--op">
+                        <img src="resources/media/interiourTrim2.jpg">
+                         <div class="trim--select">
+                         <ul>
+                            <li class="trim--title">Titanium</li>
+                            <li>Inset: Chicane in Medium Stone</li>
+                            <li>Bolster: Malt in Medium Stone</li>
+                         </ul>
+                             <i class=" tickbox far fa-square fa-2x"></i>
+                     </div>
+                 </div>
+             </div>
+                 
+                  <div class="trim__box2">
+                     <div class="trim__box2--op">
+                        <img src="resources/media/interiourTrim1.jpg">
+                         <div class="trim--select">
+                         <ul>
+                            <li class="trim--title">Zetec</li>
+                            <li>Inset: Route in Charcoal Black</li>
+                            <li>Bolster: Max in Charoal Black</li>
+                         </ul>
+                            <i class=" tickbox far fa-square fa-2x"></i>
+                     </div>
+                 </div>
+             </div>
+                 
+                  <div class="trim__box2">
+                     <div class="trim__box2--op">
+                        <img src="resources/media/interiourTrim.jpg">
+                         <div class="trim--select">
+                         <ul>
+                            <li class="trim--title">Titanium</li>
+                            <li>Inset: Chicane in Charoal Black</li>
+                            <li>Bolster: Malt in Charoal Black</li>
+                         </ul>
+                        <i class=" tickbox fas fa-check-square fa-2x"></i>
+                     </div>
+                 </div>
+             </div>
+            </div>
         </div>
-     </section>
-     
-     <section><!--btn present beneath all of the above section-->
-     <button>View our Versa Connect Offers</button>
+             <button class="btn-blue btn--view">View our Versa Connect Offers</button>
      </section>
      
      <section><!--Features carosel-->

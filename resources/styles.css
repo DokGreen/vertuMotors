@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 /*-----------------------------------------*/
 
 .mainNav {
@@ -132,8 +136,7 @@
 /*Header Banner*/
 
 .banner {
-    height: 32.8125rem;
-    width: 100%;
+    height: 75vh;
     margin: 0;
     display: flex;
     align-items: center;
@@ -177,6 +180,121 @@
 /*features section*/
 
 .featureNav {
-    width: 80%;
-    margin: 3% 10%;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+    color: #003E78;
+}
+
+.featureNav li {
+    height: 2rem;
+    width: 100%;
+    margin 0;
+    padding: 0;
+    padding-top: 12px;
+    text-align: center;
+    display: block;
+    border: solid 1px #003E78;
+}
+
+.carousle__container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.carousel__slides {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide--item {
+    height: 550px;
+    width: 100%;
+    border: solid red;
+    box-sizing: border-box;
+}
+
+.btn--view {
+    height: 2rem;
+    width: 20rem;
+    margin-left: 37%;
+}
+
+.slide--item:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+td {
+    margin: 3px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.td--grey {
+    background-color: lightgray
+}
+
+.slide--item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.slide--item:nth-child(2) img {
+    height: 28vh;
+}
+
+.trim__box2--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.trim__box1 {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(media/interiour.jpg);
+    background-size: cover;
+}
+
+.trim__box2 {
+    width: 29%;
+
+}
+
+.tickbox {
+    margin-top: 20px
+}
+
+.trim--select {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.trim--select ul {
+    margin: 5px;
+    padding: 0;
+}
+
+.trim--title {
+    font-weight: bold;
+}
+
+.trim--select ul li:nth-child(2) {
+margin-bottom: 5px;
 }
