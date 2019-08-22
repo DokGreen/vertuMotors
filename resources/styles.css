@@ -257,6 +257,71 @@ td {
     height: 28vh;
 }
 
+/*--------------- COLOR ---------------------*/
+.car__cat {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.car__cat img {
+    height: 70vh;
+    margin-left: 18%;
+}
+
+.color__cat {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 1px white;
+    box-shadow: 1px 1px 5px black;
+    background-color: black;
+}
+
+/*--------------dot colors------------------*/
+
+.dot:nth-child(1) {
+    background-color: #E8E7E3;   
+}
+.dot:nth-child(2) {
+    background-color: #7A7E80;   
+}
+.dot:nth-child(3) {
+    background-color: #BA1F1F;   
+}
+.dot:nth-child(4) {
+    background-color: #A6A9AA;   
+}
+.dot:nth-child(5) {
+    background-color: #898A80;   
+}
+.dot:nth-child(6) {
+    background-color: #CCC65D;   
+}
+.dot:nth-child(7) {
+    background-color: #1D2F82;   
+}
+.dot:nth-child(8) {
+    background-color: #181A1A;   
+}
+
+/*---------------------------------------*/
+
+.cat--text {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/*--------------- TRIM ----------------------*/
+
 .trim__box2--container {
     display: flex;
     justify-content: space-between;
