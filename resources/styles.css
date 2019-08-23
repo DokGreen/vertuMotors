@@ -467,5 +467,57 @@ margin-bottom: 5px;
 /*--------------- Footer ----------------------*/
 
 .foot-wrapper {
- background-color: darkgray;
+    padding-bottom: 0.5rem;
+    background-color: #43484d;
+}
+
+.foot__top {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.foot__top--txt {
+    margin-top: 10%;
+}
+
+.foot__top--ops {
+    height: 20%;
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot--link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot__box--op {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot__box--last {
+    width: 20%;
+}
+
+.foot--op {
+    display: block;
+    padding: 5px;
+    float: left;
+}
+
+
+.foot__bottom {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.3);
 }
