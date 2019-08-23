@@ -200,15 +200,15 @@ li {
 .carousle__container {
     width: 90vw;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .carousel__slides {
-    width: 100%;
     margin: 0 auto;
 }
 
 .slide--item {
-    height: 550px;
+    height: 100%;
     width: 100%;
     border: solid red;
     box-sizing: border-box;
@@ -254,7 +254,7 @@ td {
 }
 
 .slide--item:nth-child(2) img {
-    height: 28vh;
+    height: 35%;
 }
 
 /*--------------- COLOR ---------------------*/
@@ -265,8 +265,11 @@ td {
 }
 
 .car__cat img {
-    height: 70vh;
+    height: 30rem;
+    padding: 0;
+    margin: 0;
     margin-left: 18%;
+    
 }
 
 .color__cat {
@@ -314,10 +317,24 @@ td {
 
 /*---------------------------------------*/
 
-.cat--text {
+.cat__text {
     width: 60%;
     display: flex;
     margin: 0 auto;
+
+}
+
+.cat__text--op {
+    flex-grow: 1;
+    margin-right: 80px;
+    text-align: center;
+    border-bottom: solid;
+}
+
+.cat__text--op1 {
+    flex-grow: 2;
+    text-align: center;
+    border-bottom: solid;
 }
 
 /*--------------- TRIM ----------------------*/
@@ -362,4 +379,46 @@ td {
 
 .trim--select ul li:nth-child(2) {
 margin-bottom: 5px;
+}
+
+/*--------------- full height carousel ----------------------*/
+.carousel__container {
+    position: relative;
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel--img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*great for resizing*/
+}
+
+.carousel__track--container {
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel--item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide--btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.next--btn {
+    left: 90%;
 }
