@@ -164,10 +164,13 @@ li {
     font-size: 40px;
 }
 
+.btn-box {
+    align-self: center;
+}
+
 .btn-blue {
     height: 17%;
     width: 100%;
-    align-self: center;
     font-size: 17px;
     font-weight: 600;
     border-radius: 5px;
@@ -184,9 +187,30 @@ li {
     height: 80vh;
     width: 85%;
     margin: 0 auto;
-    border: solid purple;
+    margin-bottom: 2rem;
 }
 
+.carousel--bg {
+    background-color: #fff;
+}
+
+.carousel__top-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn--view {
+    height: 2.5rem;;
+    width: 20rem;
+    padding: 0.5rem;
+}
+
+.top--btn {
+    position: absolute;
+    top: 95%;
+}
+
+/*------------------ BLUE PRINT ----------------------------*/
 .carousel--bp {
     display: flex;
     justify-content: space-between;
@@ -242,11 +266,33 @@ li {
     justify-content: center;
 }
 
-.color__cat {
+.color__cat--wrapper {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.color__cat--nonmetal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color__cat--metal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color__cat--lst {
+    width: 50%;
+    display: flex;
+    justify-content: space-between
 }
 
 .dot {
@@ -255,40 +301,45 @@ li {
     border-radius: 50%;
     border: solid 1px #fff;
     box-shadow: 2px 2px 5px; #000;
+    cursor: pointer;
     background: black;
+}
+
+.dot:hover {
+    background-color: red;
 }
 
 /*--------------- DOT COLORS -------------------------*/
 
-.dot:nth-child(1) {
+.color__cat--nonmetal .dot:nth-child(1) {
     background-color: #E8E7E3; /* light grey */
 }
 
-.dot:nth-child(2) {
+.color__cat--nonmetal .dot:nth-child(2) {
     background-color: #7A7E80; /* dark grey */
 }
 
-.dot:nth-child(3) {
+.color__cat--nonmetal .dot:nth-child(3) {
     background-color: #BA1F1F; /* red */
 }
 
-.dot:nth-child(4) {
+.color__cat--metal .dot:nth-child(1) {
     background-color: #A6A9AA; /* silver */
 }
 
-.dot:nth-child(5) {
+.color__cat--metal .dot:nth-child(2) {
     background-color: #898A80; /* metal */
 }
 
-.dot:nth-child(6) {
+.color__cat--metal .dot:nth-child(3) {
     background-color: #CCC65D; /* solar */
 }
 
-.dot:nth-child(7) {
+.color__cat--metal .dot:nth-child(4) {
     background-color: #1D2F82; /* blue */
 }
 
-.dot:nth-child(8) {
+.color__cat--metal .dot:nth-child(5) {
     background-color: #000; /* black */
 }
 
@@ -310,6 +361,34 @@ li {
     margin-left: 0.5rem;
     flex-grow: 2;
     border-bottom: solid;
+}
+
+/*--------------- TRIM -------------------------*/
+.trim__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.trim__box1 {
+    height: 50%;
+    width: 100%;
+}
+
+.trim__box1--img {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+.trim__box2--container {
+    display: flex;
+    justify-content: space-between
+}
+
+.trim--select {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*--------------- full height carousel ----------------------*/
@@ -352,14 +431,18 @@ li {
 
 .slide--btn {
     position: absolute;
-    top: 50%;
-    left: 12px;
+    top: 40%;
     z-index: 2;
+    font-size: 8rem;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 5px #000;
+    background: transparent;
     cursor: pointer;
 }
 
 .next--btn {
-    left: 96%;
+    left: 93%
 }
 
 .carousel--nav {
