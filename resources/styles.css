@@ -13,6 +13,10 @@ li {
     list-style-type: none;
 }
 
+ul {
+    padding: 0;
+}
+
 /*-----------------------------------------*/
 
 .mainNav {
@@ -117,19 +121,43 @@ li {
 
 .secondaryNav {
     height: 4.375rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
     background-color: #003E78;
-    align-items: center;
+}
+
+.secondayNav--item {
+    display: block;
+    text-align: center;
+    padding-top: 1.5%;
+    margin: 0 10px;
 }
 
 .links--white {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: white;
     font-size: 125%;
     font-weight: 500;
 }
 
+.secondaryNav--leftfloat {
+    font-size: 1rem;
+    margin-right: 50vw;
+}
 
-.secondadrNav--leftfloat {
-    margin-left: auto;
+.secondarNav-down {
+    margin-left: 0.5rem;
+}
+
+.links--active {
+    height: 60%;
+    border-bottom: solid 3px;
 }
 
 /*-----------------------------------------*/
@@ -149,7 +177,7 @@ li {
     width: 25%;
     margin: 0 5%;
     padding-bottom: 2%;
-    font-size: 17px;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +189,7 @@ li {
 }
 
 .banBox--title {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .btn-box {
@@ -171,9 +199,9 @@ li {
 .btn-blue {
     height: 17%;
     width: 100%;
-    font-size: 17px;
+    font-size: 1.5rem;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 5%;
     border: none;
     color: white;
     background-color: #017EDB;
@@ -187,7 +215,7 @@ li {
     height: 80vh;
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .carousel--bg {
@@ -207,7 +235,28 @@ li {
 
 .top--btn {
     position: absolute;
-    top: 95%;
+    top: 100%;
+}
+
+.featureNav--op {
+    height: 2rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    text-align: center;
+    display: block;
+    color: #003E78;
+    cursor: pointer;
+}
+
+/*----------------------- CAROUSEL MOD CLASSES */
+
+.carousel--active {
+    color: #fff;
+    background-color: #003E78;
+}
+
+.carousel--layout, .carousel--color, .carousel--trim {
+    display: none;
 }
 
 /*------------------ BLUE PRINT ----------------------------*/
