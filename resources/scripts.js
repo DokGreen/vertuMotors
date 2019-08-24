@@ -1,3 +1,5 @@
+//---------------------------------------------------------------- VARIABLES
+
 //vars for the buttons of the top carousel
 const bpBtn = document.querySelector('.inner--bp');
 const layoutBtn = document.querySelector('.inner--layout');
@@ -10,6 +12,15 @@ const layoutSect = document.querySelector('.carousel--layout');
 const colorSect = document.querySelector('.carousel--color');
 const trimSect = document.querySelector('.carousel--trim');
 
+const dots = document.querySelectorAll('.dot');
+//console.log(dots); testing 
+
+const dotCars = document.querySelectorAll('.car__item img');
+//console.log(dotCars);
+
+//---------------------------------------------------------------- FUNCTIONS
+
+//add and remove class/styles for carousel top
 function toggle(a, r) {
     layoutBtn.classList.remove('carousel--active');
     bpBtn.classList.remove('carousel--active');
@@ -26,6 +37,7 @@ function toggle(a, r) {
     r.style.display = 'block';
 }
 
+//------------------------------------------------Flip through Carousel top
 bpBtn.addEventListener('click', () => {
     trimBtn.classList.remove('carousel--active');
     layoutBtn.classList.remove('carousel--active');
@@ -45,3 +57,8 @@ layoutBtn.addEventListener('click', () => toggle(layoutBtn, layoutSect));
 colorBtn.addEventListener('click', () => toggle(colorBtn, colorSect));
 
 trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------ Compare Dots and Cars
+
+//------------------------------------------------------------------------------
