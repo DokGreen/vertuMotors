@@ -12,11 +12,6 @@ const layoutSect = document.querySelector('.carousel--layout');
 const colorSect = document.querySelector('.carousel--color');
 const trimSect = document.querySelector('.carousel--trim');
 
-const dots = document.querySelectorAll('.dot');
-//console.log(dots); testing 
-
-const dotCars = document.querySelectorAll('.car__item img');
-//console.log(dotCars);
 
 //---------------------------------------------------------------- FUNCTIONS
 
@@ -59,6 +54,64 @@ colorBtn.addEventListener('click', () => toggle(colorBtn, colorSect));
 trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
 //------------------------------------------------------------------------------
 
-//------------------------------------------------------ Compare Dots and Cars
 
-//------------------------------------------------------------------------------
+
+//CAROUSEL
+
+const track = document.querySelector('.carousel__track--bottom');
+const slides = Array.from(track.children);
+console.log(slides);
+
+const preBtn = document.querySelector('.pre--btn');
+const nextBtn = document.querySelector('.next--btn');
+
+//numbers
+const numNav = document.querySelector('.carousel--nav');
+let count = 1;
+
+//size of the slides
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+const slidePosition = (s, index) => {
+    s.style.left = slideWidth * index + 'px';
+};
+
+console.log();
+
+//move the slides over
+slides.forEach(slidePosition);
+
+function moveToSlide (track, currentSlide, targetSlide) {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+};
+
+
+nextBtn.addEventListener('click', () => {
+    
+    if(count >= slides.length) {
+        console.log('Max reached');
+    } else {
+    count++;
+    }
+    const currentSlide = document.querySelector('.currentSlide');
+    const nextSlide = currentSlide.nextElementSibling;
+    numNav.innerHTML = count + '/12';
+    
+   moveToSlide(track, currentSlide, nextSlide);
+})
+
+preBtn.addEventListener('click', () => {
+    
+    if(count == 1) {
+        console.log('Min reached');
+    } else {
+    count--;
+    }
+    const currentSlide = document.querySelector('.currentSlide');
+    const preSlide = currentSlide.previousElementSibling;
+    numNav.innerHTML = count + '/12';
+   
+    moveToSlide(track, currentSlide, preSlide);
+})
