@@ -53,14 +53,22 @@ colorBtn.addEventListener('click', () => toggle(colorBtn, colorSect));
 
 trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
 //------------------------------------------------------------------------------
+//--------------------------------------------------------------- CAR PICKER
+//array of dots
+const dots = document.querySelectorAll('.dot');
+
+console.log(dots);
+
+//see the tick when clicked
 
 
 
-//CAROUSEL
+
+//---------------------------------------------------------------CAROUSEL BOTTOM
 
 const track = document.querySelector('.carousel__track--bottom');
 const slides = Array.from(track.children);
-console.log(slides);
+//console.log(slides);
 
 const preBtn = document.querySelector('.pre--btn');
 const nextBtn = document.querySelector('.next--btn');
@@ -83,8 +91,8 @@ slides.forEach(slidePosition);
 
 function moveToSlide (track, currentSlide, targetSlide) {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
+    currentSlide.classList.remove('currentSlide');
+    targetSlide.classList.add('currentSlide');
 };
 
 

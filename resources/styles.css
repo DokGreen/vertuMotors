@@ -298,6 +298,11 @@ ul {
 
 .car__cat--container {
     height: 70%;
+    object-fit: cover;
+    background-image: url(media/car7.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .car__item--img {
@@ -351,19 +356,21 @@ ul {
     justify-content: center;
     border-radius: 50%;
     border: solid 1px #fff;
-    box-shadow: 2px 2px 5px; #000;
+    box-shadow: 2px 2px 5px #000;
     cursor: pointer;
     background: black;
 }
 
 .dot:hover {
+    box-shadow: 4px 4px 5px #000;
+}
+
+.dot:active {
     position: relative;
     top: 0.2rem;
     left: 0.1rem;
-}
-
-.dot:active .dot--active {
-    visibility: visible;
+    box-shadow: 2px 2px 5px #000;
+    
 }
 
 .dot--active {
