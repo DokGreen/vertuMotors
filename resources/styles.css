@@ -6,6 +6,7 @@
 
 
 .links {
+    font-size: 1.5vw;
     text-decoration: none;
 }
 
@@ -20,7 +21,6 @@ ul {
 /*-----------------------------------------*/
 
 .mainNav {
-    height: 5.7rem;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -33,10 +33,8 @@ ul {
 }
 
 .mainNav--logo {
-    height: 70%;
-    width: 70%;
-    margin: 5% 10%;
-    
+    display: flex;
+    width: 20vw;
 }
 
 .mainNav__inner {
@@ -120,17 +118,17 @@ ul {
 /*Secondary nav*/
 
 .secondaryNav {
-    height: 4.375rem;
+    height: 5vw;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
     box-sizing: border-box;
     background-color: #003E78;
 }
 
 .secondayNav--item {
+    width: auto;
     display: block;
     text-align: center;
     padding-top: 1.5%;
@@ -139,16 +137,13 @@ ul {
 
 .links--white {
     display: block;
-    width: 100%;
-    height: 100%;
     color: white;
-    font-size: 125%;
     font-weight: 500;
 }
 
 .secondaryNav--leftfloat {
-    font-size: 1rem;
-    margin-right: 50vw;
+    font-size: 1.5vw;
+    margin-right: auto;
 }
 
 .secondarNav-down {
@@ -173,23 +168,23 @@ ul {
 }
 
 .banBox {
-    height: 60%;
-    width: 25%;
+    width: 30vw;
     margin: 0 5%;
-    padding-bottom: 2%;
-    font-size: 1.1rem;
+    padding: 0;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 .banBox--cont {
-    margin: 0 5%;
+    margin: 5%;
 }
 
 .banBox--title {
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 
 .btn-box {
@@ -199,10 +194,11 @@ ul {
 .btn-blue {
     height: 17%;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 600;
-    border-radius: 5%;
+    border-radius: 20px;
     border: none;
+    cursor: pointer;
     color: white;
     background-color: #017EDB;
 }
@@ -213,7 +209,7 @@ ul {
 .carousel__container--top {
     position: relative;
     height: 80vh;
-    width: 85%;
+    width: 80vw;
     margin: 0 auto;
     margin-bottom: 3rem;
 }
@@ -261,13 +257,21 @@ ul {
 
 /*------------------ BLUE PRINT ----------------------------*/
 .carousel--bp {
+    margin-bottom: 2vw;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    border: solid green;
+}
+
+.bp__wrapper {
+    width: 50%;
+    padding: 0;
+    margin: 0;
 }
 
 .carousel--bp--img {
-    height: 90%;
+    width: 100%;
     object-fit: cover;
 }
 /*---------- table -----------------------*/
@@ -303,6 +307,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: opacity 250ms ease-in-out;
 }
 
 .car__item--img {
@@ -487,6 +492,7 @@ ul {
 .carousel__track--container {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel__track {
@@ -545,10 +551,12 @@ ul {
     background-image: url(media/BillBoard1.jpg);
 }
 
+/*
 .banbox--bottom {
     width: 30%;
     padding: 0;
 }
+*/
 
 .banBox--titlebot {
     margin: 0;
@@ -562,7 +570,7 @@ ul {
 }
 
 .foot__top {
-    width: 80%;
+    width: 85vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -574,11 +582,10 @@ ul {
 }
 
 .foot__top--ops {
-    height: 20%;
-    width: 35%;
+    width: 30vw;
     margin: 0;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 5vw;
     display: flex;
     justify-content: space-between;
 }

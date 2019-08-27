@@ -69,6 +69,8 @@ for(i = 0; i < dots.length; i++) {
     dots[i].addEventListener('click', () => {
         console.log(car);
         
+        
+        //change the bg img to reflect the btn
         carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
     })
 }
