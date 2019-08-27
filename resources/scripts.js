@@ -56,11 +56,22 @@ trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
 //--------------------------------------------------------------- CAR PICKER
 //array of dots
 const dots = document.querySelectorAll('.dot');
-
 console.log(dots);
 
-//see the tick when clicked
 
+//loop through the dots waiting for a click
+//on click display the car class aka the name of the car img
+for(i = 0; i < dots.length; i++) {
+    
+    const carSrc = document.getElementsByClassName('car__cat--container')[0];
+    
+    let car = dots[i].className.split(' ').pop();
+    dots[i].addEventListener('click', () => {
+        console.log(car);
+        
+        carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
+    })
+}
 
 
 
