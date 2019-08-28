@@ -209,7 +209,7 @@ ul {
 
 /*----------- test -------*/
 .carousel--top {
-    height: 80%;
+    height: 32vw;
     position: relative;
     overflow: hidden;
     border: solid;
