@@ -194,6 +194,7 @@ ul {
 .btn-blue {
     height: 17%;
     width: 100%;
+    padding: 0.5vw;
     font-size: 2vw;
     font-weight: 600;
     border-radius: 20px;
@@ -205,6 +206,22 @@ ul {
 
 /*------------------------------------*/
 /*-------------------- Carousel Top ----------------------------*/
+
+/*----------- test -------*/
+.carousel--top {
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border: solid;
+}
+
+.carousel__track--top {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*----------- test -------*/
 
 .carousel__container--top {
     position: relative;
@@ -224,9 +241,9 @@ ul {
 }
 
 .btn--view {
-    height: 2.5rem;;
-    width: 20rem;
-    padding: 0.5rem;
+    height: 3vw;
+    width: 25vw;
+    font-size: 1.5vw;
 }
 
 .top--btn {
@@ -259,9 +276,8 @@ ul {
 .carousel--bp {
     margin-bottom: 2vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    border: solid green;
 }
 
 .bp__wrapper {
@@ -276,11 +292,11 @@ ul {
 }
 /*---------- table -----------------------*/
 .bp--table {
-    height: 80%;
-    width: 40%;
+    height: 25vw;
+    width: 35vw;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5vw;
 }
 
 .td--grey {
@@ -295,22 +311,25 @@ ul {
 }
 
 .carousel--layout--img {
-    height: 30%;
+    height: 12vw;
+}
+
+.layout--text {
+    margin: 0;
+    padding:0;
+    font-size: 1.2vw;
 }
 
 /*---------- car color Section -----------------------*/
 
-.carousel--color {
-    overflow: hidden;
-}
-
 .car__cat--container {
-    height: 70%;
+    height: 24vw;
     object-fit: cover;
     background-image: url(media/car2.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid 5px green;
 }
 
 .car__item--img {
@@ -358,8 +377,8 @@ ul {
 }
 
 .dot {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3vw;
+    width: 3vw;
     display: flex;
     justify-content: center;
     border-radius: 50%;
@@ -451,12 +470,12 @@ ul {
 }
 
 .trim__box1 {
-    height: 50%;
+    height: 15vw;
     width: 100%;
 }
 
 .trim__box1--img {
-    height: 40%;
+    height: 100%;
     width: 100%;
     margin-bottom: 0.5rem;
     object-fit: cover;
@@ -464,7 +483,8 @@ ul {
 
 .trim__box2--container {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 1vw;
 }
 
 .trim--select {
@@ -472,6 +492,13 @@ ul {
     justify-content: space-between;
 }
 
+.trim__op--img {
+    width: 22vw;
+}
+
+.tickbox {
+    width: 2vw;
+}
 /*--------------- full height carousel ----------------------*/
 
 .carousel__wrapper {
