@@ -58,22 +58,29 @@ trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
 const dots = document.querySelectorAll('.dot');
 console.log(dots);
 
+const carSrc = document.getElementsByClassName('car__cat--container')[0];
 
 //loop through the dots waiting for a click
 //on click display the car class aka the name of the car img
 for(i = 0; i < dots.length; i++) {
     
-    const carSrc = document.getElementsByClassName('car__cat--container')[0];
-    
     let car = dots[i].className.split(' ').pop();
     dots[i].addEventListener('click', () => {
-        console.log(car);
+        //console.log(car);
         
+        //animate the change -- keep working on this
+        /*carSrc.style.animation = 'bounce .5s'
+        
+        carSrc.addEventListener('animationend', () => {
+            carSrc.style.animation = '';
+        }) */
         
         //change the bg img to reflect the btn
         carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
     })
 }
+
+
 
 
 

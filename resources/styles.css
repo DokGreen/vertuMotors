@@ -300,6 +300,10 @@ ul {
 
 /*---------- car color Section -----------------------*/
 
+.carousel--color {
+    overflow: hidden;
+}
+
 .car__cat--container {
     height: 70%;
     object-fit: cover;
@@ -307,7 +311,6 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: opacity 250ms ease-in-out;
 }
 
 .car__item--img {
@@ -617,4 +620,22 @@ ul {
     margin: 0 auto;
     font-size: 0.8rem;
     color: rgba(255,255,255,0.3);
+}
+
+/*--------------------------------- KEY FRAMES --------------------------------------*/
+
+/*-------------BOUNCE*/
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(100%);
+    }
+    
+    
+    100% {
+        transform: translateY(0);
+    }
 }
