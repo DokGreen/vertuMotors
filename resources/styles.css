@@ -60,6 +60,7 @@ ul {
 }
 
 .innerNav--top {
+    font-size: 1.2vw;
     justify-content: flex-end;
 }
 
@@ -70,7 +71,7 @@ ul {
 
 .innerNav__item--top {
     display: block;
-    margin: 0.5rem 0.625rem;
+    margin: 0.5vw 0.625vw;
     font-size: 85%;
 }
 
@@ -78,36 +79,36 @@ ul {
     display: block;
     margin: 1rem auto;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .innerNav__inner--optioncon {
-    margin: 0 0 0 0.625rem;
-    padding: 0.125rem;
+    margin: 0 0 0 0.625vw;
+    padding: 0.125vw;
     font-weight: bold;
-    border: solid 0.0625rem blue;
+    border: solid 0.0625vw blue;
     color: yellow;
     background-color: black;
 }
 
 .innerNav__inner--optionA {
-    margin: 0 0.125rem;
-    padding: 0.125rem;
+    margin: 0 0.125vw;
+    padding: 0.125vw;
     font-weight: bold;
-    border: solid 0.0625rem blue;
+    border: solid 0.1vw blue;
     color: blue;
 }
 
 .innerNav__item--green {
     margin: 0;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5vw;
     text-align: center;
     color: white;
     background-color: #14A65B;
 }
 
 .innerNav__item--icon{
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 
 .links--black {
@@ -131,14 +132,14 @@ ul {
     width: auto;
     display: block;
     text-align: center;
-    padding-top: 1.5%;
+    padding-top: 1.5vw;
     margin: 0 10px;
 }
 
 .links--white {
     display: block;
     color: white;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .secondaryNav--leftfloat {
@@ -159,7 +160,7 @@ ul {
 /*Header Banner*/
 
 .banner {
-    height: 80vh;
+    height: 40vw;
     margin: 0;
     display: flex;
     align-items: center;
@@ -212,7 +213,6 @@ ul {
     height: 32vw;
     position: relative;
     overflow: hidden;
-    border: solid;
 }
 
 .carousel__track--top {
@@ -225,10 +225,8 @@ ul {
 
 .carousel__container--top {
     position: relative;
-    height: 80vh;
     width: 80vw;
     margin: 0 auto;
-    margin-bottom: 3rem;
 }
 
 .carousel--bg {
@@ -243,6 +241,7 @@ ul {
 .btn--view {
     height: 3vw;
     width: 25vw;
+    margin-top: 1vw;
     font-size: 1.5vw;
 }
 
@@ -252,9 +251,10 @@ ul {
 }
 
 .featureNav--op {
-    height: 2rem;
+    height: 3vw;
     width: 100%;
-    padding-top: 0.5rem;
+    padding-top: 0.5vw;
+    font-weight: 600;
     text-align: center;
     display: block;
     color: #003E78;
@@ -329,7 +329,6 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border: solid 5px green;
 }
 
 .car__item--img {
@@ -469,6 +468,10 @@ ul {
     flex-direction: column;
 }
 
+.carousel--trim {
+    font-size: 1vw;
+}
+
 .trim__box1 {
     height: 15vw;
     width: 100%;
@@ -543,9 +546,9 @@ ul {
 
 .slide--btn {
     position: absolute;
-    top: 40%;
+    top: 42%;
     z-index: 2;
-    font-size: 8rem;
+    font-size: 12vw;
     border: none;
     color: rgba(255,255,255,0.5);
     text-shadow: 1px 1px 5px #000;
@@ -553,15 +556,20 @@ ul {
     cursor: pointer;
 }
 
+.pre--btn {
+    margin-left: 0.5vw;
+}
+
 .next--btn {
-    left: 93%
+    padding: 0;
+    left: 90vw;
 }
 
 .carousel--nav {
     position: absolute;
     top: 85%;
     left: 50%;
-    padding: 5px;
+    padding: 1vw;
     border-radius: 25%;
     background-color: rgba(255,255,255, 0.5);
 }
@@ -571,12 +579,13 @@ ul {
 .carousel__text {
     width: 80%;
     margin: 0 auto;
+    font-size: 1.4vw
 }
 
 /*--------------- Banner box bottom ----------------------*/
 
 .banner__bottom {
-    height: 80vh;
+    height: 40vw;
     object-fit: contain;
     background-image: url(media/BillBoard1.jpg);
 }
@@ -595,6 +604,7 @@ ul {
 /*--------------- Footer ----------------------*/
 
 .foot-wrapper {
+    font-size: 1.2vw;
     padding-bottom: 0.5rem;
     background-color: #43484d;
 }
@@ -637,7 +647,7 @@ ul {
 
 .foot--op {
     display: block;
-    padding: 5px;
+    padding: 0.5vw;
     float: left;
 }
 
@@ -645,7 +655,7 @@ ul {
 .foot__bottom {
     width: 80%;
     margin: 0 auto;
-    font-size: 0.8rem;
+    font-size: 1vw;
     color: rgba(255,255,255,0.3);
 }
 
@@ -664,5 +674,155 @@ ul {
     
     100% {
         transform: translateY(0);
+    }
+}
+
+
+/*--------------------------------- MEDIA QUERIES --------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    /*-----------------------------------------*/
+    /*logo and first nav*/
+    .mainNav {
+        flex-direction: column;
+    }
+    .mainNav--border {
+        margin: 0 auto;
+    }
+    .innerNav--top {
+        margin: 0;
+        font-size: 2vw;
+        justify-content: center;
+    }
+    .innerNav__item--green {
+        padding: 
+    }
+    /*-----------------------------------------*/
+    /*Second nav*/
+    .links--black {
+        font-size: 2.5vw;
+    }   
+    .links--black:first-child {
+        margin-left: 1vw
+    }
+    
+    .links--black:last-child {
+        margin-right: 1vw
+    }
+    /*-----------------------------------------*/
+    /*blue nav*/
+    .secondarynav {
+        height: 8vw;
+    }
+    
+    .links--white {
+        font-size:2.5vw
+    }
+    /*-----------------------------------------*/
+    /*top banner*/
+    .banBox {
+        width: 40vw;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.8vw;
+    }
+    /*-----------------------------------------*/
+    /*top carousel*/
+    .innernav--bottom {
+        font-size: 2.5vw;
+    }
+    .featureNav--op {
+        padding: 1vw;
+    }
+    .innerNav__item--bottom {
+        margin: 1vw 0;
+    }
+    /*-----------------------------------------*/
+    /*color carousel*/
+    .car__cat--container {
+        width: 50%;
+        margin-top: 4vw;
+        float: right;
+    }
+    .color__cat--wrapper {
+        height: 100%;
+        width: 50%;
+        margin-top: 4vw;
+        float: left;
+        flex-direction: column;
+        font-size: 3vw;
+    }
+    .color__cat--lst {
+        width: 100%;
+        justify-content: center;
+    }   
+    .dot {
+        margin: 0.5vw;
+    }
+    /*-----------------------------------------*/
+    /*trim carousel*/
+    .trim__box1 {
+        display: none;
+    }
+    .trim__box2--container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .trim__box2--op {
+        height: 10vw;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .trim--select {
+        float: right;
+    }
+    /*-----------------------------------------*/
+    /*bottom carousel*/
+    .carousel__container {
+        height: 50vw;
+    }
+    
+    .next--btn {
+        left: 86vw;
+    }
+    .carousel--nav {
+        position: absolute;
+        top: 85%;
+        left: 45%;
+        padding: 1vw;
+    }
+    .carousel__text {
+        font-size: 1.8vw;
+    }
+    /*-----------------------------------------*/
+    /*footer*/
+
+    .foot__top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    .foot__top--txt {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .foot__top--ops {
+        width: 100%;
+        margin-top: 0.5vw;
+}
+
+    .foot__box--op {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .foot__box--last {
+        width: 20%;
+    }
+    .foot__bottom {
+        margin-bottom: 0;
+        font-size: 1vw;
     }
 }

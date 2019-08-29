@@ -56,7 +56,7 @@ trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
 //--------------------------------------------------------------- CAR PICKER
 //array of dots
 const dots = document.querySelectorAll('.dot');
-console.log(dots);
+//console.log(dots);
 
 const carSrc = document.getElementsByClassName('car__cat--container')[0];
 
@@ -66,7 +66,7 @@ for(i = 0; i < dots.length; i++) {
     
     let car = dots[i].className.split(' ').pop();
     dots[i].addEventListener('click', () => {
-        //console.log(car);
+        console.log(car);
         
         //animate the change -- keep working on this
         /*carSrc.style.animation = 'bounce .5s'
@@ -76,7 +76,12 @@ for(i = 0; i < dots.length; i++) {
         }) */
         
         //change the bg img to reflect the btn
-        carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
+        //WORK ON THIS--------------------------------------------
+        if(car === 'car2' || 'car7') {
+            carSrc.style.backgroundImage = `url(resources/media/${car}.webp)`
+        } else if(car === 'car0') {
+            carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
+        }
     })
 }
 
