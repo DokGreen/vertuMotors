@@ -52,6 +52,8 @@ layoutBtn.addEventListener('click', () => toggle(layoutBtn, layoutSect));
 colorBtn.addEventListener('click', () => toggle(colorBtn, colorSect));
 
 trimBtn.addEventListener('click', () => toggle(trimBtn, trimSect));
+
+
 //------------------------------------------------------------------------------
 //--------------------------------------------------------------- CAR PICKER
 //array of dots
@@ -60,23 +62,31 @@ const dots = document.querySelectorAll('.dot');
 
 const carSrc = document.getElementsByClassName('car__cat--container')[0];
 
+
 //loop through the dots waiting for a click
 //on click display the car class aka the name of the car img
 for(i = 0; i < dots.length; i++) {
     
     let car = dots[i].className.split(' ').pop();
     dots[i].addEventListener('click', () => {
-        //console.log(car);   
+        //console.log(car);
         
-        //WORK ON THIS--------------------------------------------
+        for(c = 0; c < dots.length; c++){
+        dots[c].innerHTML = '';
+        }
+        
+        let dotSelect = document.getElementsByClassName(car)[0];
+        //console.log('dotSelect = ' + dotSelect);
+        
+        dotSelect.innerHTML = '<i class="dot--active fas fa-check"></i>';
+        
+        
         //change the bg img to reflect the btn
-            carSrc.style.backgroundImage = `url(resources/media/${car}.png)`
+            carSrc.style.backgroundImage = `url(resources/media/${car}.png)`;
+            
     })
     
 }
-
-
-
 
 
 //---------------------------------------------------------------CAROUSEL BOTTOM

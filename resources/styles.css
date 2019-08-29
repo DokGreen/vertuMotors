@@ -396,15 +396,13 @@ ul {
     top: 0.2rem;
     left: 0.1rem;
     box-shadow: 2px 2px 5px #000;
-    
 }
 
 .dot--active {
     margin: 0;
     padding: 0;
-    margin-top: 20%;
-    font-size: 1.5rem;
-    visibility: hidden;
+    margin-top: 0.7vw;
+    font-size: 1.5vw;
     color: rgba(255, 255, 255, 0.8);
 }
 
