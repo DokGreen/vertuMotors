@@ -325,7 +325,7 @@ ul {
 .car__cat--container {
     height: 24vw;
     object-fit: cover;
-    background-image: url(media/car2.webp);
+    background-image: url(media/car1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -688,10 +688,12 @@ ul {
     }
     .mainNav--border {
         margin: 0 auto;
+        border: none;
     }
     .innerNav--top {
         margin: 0;
         font-size: 2vw;
+        margin-bottom: 0.5vw;
         justify-content: center;
     }
     .innerNav__item--green {
@@ -738,6 +740,11 @@ ul {
         margin: 1vw 0;
     }
     /*-----------------------------------------*/
+    /*layout carousel*/
+    .layout--text {
+        font-size: 1.8vw;
+    }
+    /*-----------------------------------------*/
     /*color carousel*/
     .car__cat--container {
         width: 50%;
@@ -770,10 +777,11 @@ ul {
     }
     .trim__box2--op {
         height: 10vw;
-        width: 60%;
+        width: 60vw;
         margin: 0 auto;
     }
     .trim--select {
+        font-size: 1vw;
         float: right;
     }
     /*-----------------------------------------*/
@@ -804,12 +812,14 @@ ul {
 }
     .foot__top--txt {
         width: 100%;
+        font-size: 1.8vw;
         text-align: center;
         margin: 0 auto;
     }
 
     .foot__top--ops {
         width: 100%;
+        font-size: 1.5vw;
         margin-top: 0.5vw;
 }
 

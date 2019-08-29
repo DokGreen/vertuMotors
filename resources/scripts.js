@@ -66,23 +66,13 @@ for(i = 0; i < dots.length; i++) {
     
     let car = dots[i].className.split(' ').pop();
     dots[i].addEventListener('click', () => {
-        console.log(car);
+        //console.log(car);   
         
-        //animate the change -- keep working on this
-        /*carSrc.style.animation = 'bounce .5s'
-        
-        carSrc.addEventListener('animationend', () => {
-            carSrc.style.animation = '';
-        }) */
-        
-        //change the bg img to reflect the btn
         //WORK ON THIS--------------------------------------------
-        if(car === 'car2' || 'car7') {
-            carSrc.style.backgroundImage = `url(resources/media/${car}.webp)`
-        } else if(car === 'car0') {
-            carSrc.style.backgroundImage = `url(resources/media/${car}.png)` 
-        }
+        //change the bg img to reflect the btn
+            carSrc.style.backgroundImage = `url(resources/media/${car}.png)`
     })
+    
 }
 
 
